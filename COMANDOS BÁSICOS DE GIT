@@ -1,0 +1,138 @@
+COMANDOS BÁSICOS DE GIT
+
+1. Entrar na pasta do projeto
+Usar quando for trabalhar no projeto.
+
+cd ~/Documentos/"Aprendendo Git e Github"
+
+
+2. Ver o estado do projeto
+Usar sempre antes de fazer commit ou push.
+
+git status
+
+
+3. Ver commits já feitos
+Usar quando quiser ver o histórico.
+
+git log --oneline
+
+
+4. Criar arquivo pelo terminal
+Usar quando quiser criar um arquivo simples.
+
+echo "Meu texto aqui" > teste.txt
+
+
+5. Adicionar nova linha em arquivo existente
+Usar quando quiser acrescentar texto sem apagar o conteúdo anterior.
+
+echo "Nova linha" >> teste.txt
+
+
+6. Ver conteúdo de um arquivo
+Usar para conferir o texto dentro do arquivo.
+
+cat teste.txt
+
+
+7. Preparar arquivos para commit
+Usar depois de criar/modificar arquivos.
+
+git add .
+
+
+8. Preparar apenas um arquivo específico
+Usar quando quiser adicionar só um arquivo.
+
+git add teste.txt
+
+
+9. Criar commit
+Usar para salvar uma versão do projeto.
+
+git commit -m "Mensagem explicando a alteração"
+
+
+10. Adicionar e commitar arquivos já monitorados
+Usar só para arquivos que já existem no Git.
+
+git commit -am "Mensagem explicando a alteração"
+
+
+11. Enviar alterações para o GitHub
+Usar depois do commit.
+
+git push
+
+
+12. Baixar atualizações do GitHub
+Usar antes de começar a trabalhar ou antes de subir alterações.
+
+git pull
+
+
+13. Ver repositório remoto conectado
+Usar para conferir se o projeto está ligado ao GitHub.
+
+git remote -v
+
+
+14. Ver branch atual
+Usar para saber em qual branch você está.
+
+git branch
+
+
+15. Renomear branch para main
+Usar quando a branch estiver como master e você quiser usar main.
+
+git branch -M main
+
+
+16. Voltar temporariamente para um commit antigo
+Usar só para testar/ver como estava antes.
+
+git checkout CODIGO_DO_COMMIT
+
+
+17. Voltar para a branch principal
+Usar depois de testar um commit antigo.
+
+git switch main
+
+
+18. Voltar definitivamente para um commit antigo
+Cuidado: apaga da branch os commits depois dele.
+
+git reset --hard CODIGO_DO_COMMIT
+
+
+19. Recuperar commit depois de reset
+Usar se você fez reset e quer achar commits antigos.
+
+git reflog
+
+
+20. Desfazer um commit sem apagar histórico
+Usar quando quiser desfazer uma alteração mantendo o histórico.
+
+git revert CODIGO_DO_COMMIT
+
+Fluxo principal do dia a dia:
+
+cd ~/Documentos/"Aprendendo Git e Github"
+git pull
+git status
+git add .
+git commit -m "Mensagem da alteração"
+git push
+
+Regra prática:
+
+git pull  = baixa do GitHub
+git add   = prepara alteração
+git commit = salva versão local
+git push  = envia para o GitHub
+git status = mostra o que está acontecendo
+git log --oneline = mostra o histórico
