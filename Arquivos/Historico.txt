@@ -1,0 +1,2 @@
+Ricardo criou uma pasta chamada Arquivos usando o comando mkdir
+Depois de criar a pasta ele criou um arquivo de texto usando o comando > arquivo

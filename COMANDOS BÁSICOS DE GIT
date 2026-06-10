@@ -131,7 +131,7 @@ git push
 Regra prática:
 
 git pull  = baixa do GitHub
-git add   = prepara alteração
+git add . = prepara alteração
 git commit = salva versão local
 git push  = envia para o GitHub
 git status = mostra o que está acontecendo
