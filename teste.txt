@@ -1,3 +1,6 @@
 Meu primeiro teste com Git
 Agora estou modificando o arquivo teste
 Novo commit
+Novo commit 1
+Novo commit 2
+Novo commit 3
