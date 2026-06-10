@@ -1,0 +1,8 @@
+Comandos Git e Github Basicos de Git 2.0
+
+git pull = baixa do GitHub
+git add. _ prepara alteração
+git commit -m "mensagem" = salva versão local
+git push = envia para o GitHub
+git status = mostra o que está acontecendo
+git log --oneline = mostra o histórico
